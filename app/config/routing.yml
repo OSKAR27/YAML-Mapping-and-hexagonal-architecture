@@ -3,31 +3,31 @@
 #    type:     annotation
 
 product_create:
-  path: /product/
-  defaults: { _controller: \MyApp\Bundle\ProductBundle\Product\Controller\CreateProductController::execute }
+  path: /api/product/
+  defaults: { _controller: \MyApp\Bundle\ProductBundle\Product\API\Controller\CreateProductController::execute }
   methods: [POST]
 
 product_delete:
-  path: /product/{id}/
-  defaults: { _controller: \MyApp\Bundle\ProductBundle\Product\Controller\DeleteProductController::execute }
+  path: /api/product/{id}/
+  defaults: { _controller: \MyApp\Bundle\ProductBundle\Product\API\Controller\DeleteProductController::execute }
   methods: [DELETE]
 
 product_update:
-  path: /product/{id}/
-  defaults: { _controller: \MyApp\Bundle\ProductBundle\Product\Controller\UpdateProductController::execute }
+  path: /api/product/{id}/
+  defaults: { _controller: \MyApp\Bundle\ProductBundle\Product\API\Controller\UpdateProductController::execute }
   methods: [PUT]
 
 product_list:
-  path: /product/
-  defaults: { _controller: \MyApp\Bundle\ProductBundle\Product\Controller\ListProductsController::execute }
+  path: /api/product/
+  defaults: { _controller: \MyApp\Bundle\ProductBundle\Product\API\Controller\ListProductsController::execute }
   methods: [GET]
 
 owner_create:
-  path: /owner/
+  path: /api/owner/
   defaults: { _controller: \MyApp\Bundle\ProductBundle\Owner\Controller\CreateOwnerController::execute }
   methods: [POST]
 
 owner_list:
-  path: /owner/
+  path: /api/owner/
   defaults: { _controller: \MyApp\Bundle\ProductBundle\Owner\Controller\ListOwnersController::execute }
   methods: [GET]

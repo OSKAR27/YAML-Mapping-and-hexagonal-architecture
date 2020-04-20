@@ -1,6 +1,6 @@
 <?php
 
-namespace MyApp\Bundle\ProductBundle\Product\Controller;
+namespace MyApp\Bundle\ProductBundle\Product\API\Controller;
 
 use Doctrine\ORM\Query;
 use MyApp\Component\Product\Domain\Product;

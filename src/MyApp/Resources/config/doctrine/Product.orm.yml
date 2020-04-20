@@ -16,8 +16,7 @@ MyApp\Component\Product\Domain\Product:
             type: text
     oneToOne:
       owner:
-        targetEntity: owner
-        inversedBy: product
+        targetEntity: Owner
         cascade: ["persist"]
         joinColumn:
           name: owner_id

@@ -1,6 +1,6 @@
 <?php
 
-namespace MyApp\Bundle\ProductBundle\Product\Controller;;
+namespace MyApp\Bundle\ProductBundle\Product\API\Controller;;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
