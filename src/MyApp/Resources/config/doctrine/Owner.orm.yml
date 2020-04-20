@@ -1,0 +1,12 @@
+MyApp\Component\Product\Domain\Owner:
+    type: entity
+    table: owner
+    repositoryClass: \MyApp\Bundle\ProductBundle\Owner\Repository\OwnerRepository
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            length: 100
